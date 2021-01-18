@@ -1,9 +1,19 @@
-\documentclass[a4paper,10pt,ngerman]{LichtisDocumentClass}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ~ INTRO AND ADDITIONAL PACKAGES ~
+%
+% Do not change anything other than adding additional packages you need.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,ngerman]{LichtisDocumentClass}
+\bibliography{bibliography/bibliography}
+
+% \usepackage{}
+% \usepackage[]{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ~ INFORMATION ABOUT THE DOCUMENT ~
 %
-% Fill them out to create a title page and the pdf meta data
+% Fill them out to create a title page.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{}
 \subtitle{}
@@ -11,23 +21,13 @@
 \date{}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ~ ADDITIONAL PACKAGES ~
-%
-% Add additional packages down here.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \usepackage{}
 
-
-
-
-
-\begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ~ BEGINING OF THE DOCUMENT ~
 % 
-% Title page and table of contents - Comment them out if you don't need them
+% Title page and table of contents - Comment them out if you don't need them.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
 \maketitle
 \tableofcontents
 
@@ -38,16 +38,16 @@
 % You can either put your content directly in here or store it in seperate 
 % .tex files and just include them here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{chapters/README}
+%\include{chapters/[TEX-FILE-WITHOUT-ENDING]}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ~ END OF THE DOCUMENT ~ 
 % 
-% List of tables and -figures and bibliography. Comment the ones you don't need
+% List of tables and -figures and bibliography. Uncomment the ones you need
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\listoftables
-\listoffigures
-%\printbibliography
+% \listoftables
+% \listoffigures
+% \printbibliography
 
 \end{document}
