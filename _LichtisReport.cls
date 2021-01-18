@@ -13,7 +13,7 @@
 % CLASS CREATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{LichtisDocumentClass}[2021/01/17 Lichti's document class]
+\ProvidesClass{_LichtisReport}[2021/01/17 Lichti's report class]
 
 \LoadClassWithOptions{scrreprt}
 
