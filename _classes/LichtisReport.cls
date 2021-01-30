@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%	LICHTI'S DOCUMENT CLASS
+%	LICHTI'S DOCUMENT CLASS FOR REPORTS
 %
 %	Author: Christoph Lichtenegger
 %	Date: 2021/01/17
-%	Last Modification: 2021/01/17
+%	Last Modification: 2021/01/30
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -13,9 +13,9 @@
 % CLASS CREATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{_LichtisArticle}[2021/01/17 Lichti's article class]
+\ProvidesClass{LichtisReport}[2021/01/17 Lichti's report class]
 
-\LoadClassWithOptions{scrartcl}
+\LoadClassWithOptions{scrreprt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{english} 	{\PassOptionsToPackage{\CurrentOption}{babel}}
 \DeclareOption{ngerman} 	{\PassOptionsToPackage{\CurrentOption}{babel}}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrartcl}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrreprt}}
 \ProcessOptions\relax
 
 
@@ -83,7 +83,8 @@
 % BIBLIOGRAPHY
 \RequirePackage[
 	backend		= bibtex,
-	style		= numeric-comp]{biblatex}	% https://ctan.org/pkg/biblatex
+	style		= numeric-comp,
+	maxbibnames	= 99]{biblatex}	% https://ctan.org/pkg/biblatex
 	
 
 % PACKAGES FOR MATH

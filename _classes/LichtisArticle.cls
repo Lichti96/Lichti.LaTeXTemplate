@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%	LICHTI'S DOCUMENT CLASS
+%	LICHTI'S DOCUMENT CLASS FOR ARTICLES
 %
 %	Author: Christoph Lichtenegger
 %	Date: 2021/01/17
-%	Last Modification: 2021/01/17
+%	Last Modification: 2021/01/30
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -13,9 +13,9 @@
 % CLASS CREATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{_LichtisReport}[2021/01/17 Lichti's report class]
+\ProvidesClass{LichtisArticle}[2021/01/17 Lichti's article class]
 
-\LoadClassWithOptions{scrreprt}
+\LoadClassWithOptions{scrartcl}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,7 +83,8 @@
 % BIBLIOGRAPHY
 \RequirePackage[
 	backend		= bibtex,
-	style		= numeric-comp]{biblatex}	% https://ctan.org/pkg/biblatex
+	style		= numeric-comp,
+	maxbibnames	= 99]{biblatex}	% https://ctan.org/pkg/biblatex
 	
 
 % PACKAGES FOR MATH
